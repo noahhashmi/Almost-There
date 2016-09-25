@@ -9,15 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+//    struct Trip {
+//        let tripName: String
+//        let location: Double
+//        let contactName: String
+//        let contactNumber: Double
+//        let whenToText: Double
+//        let save: Bool
+//    }
+//    
+//    var array = Array(count: 8, repeatedValue: Trip(tripName: "", location: 0, contactName: "", contactNumber: 0, whenToText: 0, save: false));
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
 

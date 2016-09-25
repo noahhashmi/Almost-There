@@ -36,7 +36,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5k3-Og-jwl" kind="show" id="Arr-CJ-czj"/>
+                                    <segue destination="qia-Zg-3ly" kind="show" id="vcW-Xl-W6z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,9 +107,6 @@
                                 <state key="normal" title="Add New">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="qia-Zg-3ly" kind="show" id="XLA-iR-UIt"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -127,12 +124,12 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1014" y="337"/>
+            <point key="canvasLocation" x="990" y="-95"/>
         </scene>
-        <!--View Controller-->
+        <!--TripVC-->
         <scene sceneID="ub0-xW-tdV">
             <objects>
-                <viewController id="qia-Zg-3ly" sceneMemberID="viewController">
+                <viewController id="qia-Zg-3ly" customClass="TripVC" customModule="Almost_There_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7eD-B7-Ta0"/>
                         <viewControllerLayoutGuide type="bottom" id="yvo-cn-LEI"/>
@@ -189,6 +186,10 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="locationChooser:" destination="qia-Zg-3ly" eventType="touchUpInside" id="tnu-4m-s5V"/>
+                                                    <action selector="locationClicked:" destination="qia-Zg-3ly" eventType="touchUpInside" id="q8f-Jr-4Xi"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -261,7 +262,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="129" height="75"/>
                                                 <state key="normal" title="Cancel"/>
                                                 <connections>
-                                                    <segue destination="5k3-Og-jwl" kind="show" id="eH2-n7-dvn"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="2wv-s9-EjW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qT-1W-z2u">
@@ -286,6 +287,12 @@
                             <constraint firstItem="6qV-Cb-aaf" firstAttribute="centerX" secondItem="vQw-PU-dJu" secondAttribute="centerX" id="tvQ-Lw-Ems"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contact" destination="vjk-DQ-TAf" id="CXC-e1-T3P"/>
+                        <outlet property="location" destination="SoB-gx-g5H" id="TXh-9Y-EoA"/>
+                        <outlet property="time" destination="wBY-NU-Vmq" id="YgL-wf-h4e"/>
+                        <outlet property="tripName" destination="C1n-iK-qsx" id="CEX-TO-m6C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUx-nL-27a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -348,7 +355,6 @@
         <image name="Logomakr_1gNxTy" width="375" height="113"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Cw-hW-2U2"/>
-        <segue reference="eH2-n7-dvn"/>
+        <segue reference="vcW-Xl-W6z"/>
     </inferredMetricsTieBreakers>
 </document>
